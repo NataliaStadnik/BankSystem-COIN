@@ -1,0 +1,138 @@
+.currency {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__title {
+    margin-bottom: 56px;
+    letter-spacing: 0.6px;
+  }
+
+  &__dinamic {
+    max-height: min-content;
+  }
+}
+
+.currency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24.5px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 49px;
+}
+
+.left-part {
+  height: fit-content;
+  flex-basis: 46%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 587px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+
+  .dinamic {
+    padding: 50px;
+  }
+}
+
+.changes {
+  flex-basis: 50%;
+}
+
+.dinamic-block {
+  padding: 50px 85px 77px 50px;
+  flex-basis: 54%;
+  border-radius: 50px;
+  background-color: $color-grey-backgr;
+
+  &__title {
+    margin-bottom: 25px;
+  }
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+
+  &__numbers {
+    position: relative;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+
+  &__sign {
+    &::after {
+      top: 50%;
+      right: -35px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__sign--green::after {
+    @include before-elem(20px, 10px, '../assets/img/arrow-green.svg');
+  }
+
+  &__sign--red::after {
+    @include before-elem(20px, 10px, '../assets/img/arrow-red.svg');
+  }
+
+  &__dots {
+    width: 100%;
+    border-bottom: 1px dashed $color-black;
+
+    &--green {
+      border-color: $color-green;
+    }
+
+    &--red {
+      border-color: $color-red;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    letter-spacing: 1.6px;
+  }
+}
+
+.over-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.dinamic__wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .input__select {
+    max-width: 134px;
+  }
+}
+
+.over-wrap__outer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.dinamic__form {
+  .dinamic__title {
+    margin-bottom: 22px;
+  }
+}

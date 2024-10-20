@@ -1,0 +1,21 @@
+.history-section {
+  padding-top: 44px;
+  padding-bottom: 50px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  .btn--sign {
+    margin-bottom: 33px;
+  }
+
+  &__top {
+    margin-bottom: 50px;
+  }
+}
+
+.dinamic__upper,
+.dinamic__bottom {
+  min-height: 288px;
+}

@@ -1,0 +1,158 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: $backgr-grey;
+}
+
+.title {
+  @include font-style('WorkSans', $color-black, 700, 34px, 39.88px);
+}
+
+.title--midi {
+  @include font-style('WorkSans', $color-black, 700, 20px, 23.46px);
+  letter-spacing: 0.4px;
+}
+
+.input {
+  width: 300px;
+  padding: 12px 10px 12px 16px;
+  background-color: $color-white;
+  border-radius: 7px;
+  border: 1px solid $border-grey;
+  color: $color-grey-37;
+
+  &::placeholder {
+    @include font-style('Ubuntu', $placeholder-grey, 400, 16px, 24px);
+  }
+}
+
+.btn {
+  padding: 14px 21px;
+  border-radius: 7px;
+  background-color: $color-blue;
+  @include font-style('Ubuntu', $color-white, 500, 14px, 20px);
+}
+
+.btn--sign {
+  position: relative;
+  padding: 16px 24px 16px 58px;
+  font-size: 16px;
+
+  &::before {
+    @include before-elem(24px, 24px, '../assets/img/plus.svg');
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+  }
+}
+
+.label {
+  @include font-style('Ubuntu', $color-light-black, 500, 16px, 20px);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  content: '';
+  @include font-style('Ubuntu', $color-red, 400, 12px, 18px);
+}
+
+.error--red {
+  border-color: $color-red;
+}
+
+.correct-form {
+  border-color: $color-green;
+}
+
+.choose::before {
+  @include before-elem(24px, 21px, '../assets/img/arrow.svg');
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.choose-click::before {
+  transform: rotate(180deg) translateY(50%);
+}
+
+.scroll-none {
+  overflow: hidden;
+}
+
+.pagination {
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+  padding-top: 20px;
+  border-radius: 7px;
+
+  &__btn,
+  &__dots,
+  &__arrow {
+    padding: 8px 15px;
+    @include font-style('Ubuntu', $border-grey, 700, 16px, 24px);
+  }
+
+  &__arrow {
+    position: relative;
+    color: transparent;
+
+    &::before {
+      transform: translateY(-50%);
+      top: 50%;
+      @include before-elem(5px, 9px, '../assets/img/pagination-arrow.svg');
+    }
+
+    &:first-child::before {
+      left: 70%;
+    }
+
+    &:last-child::before {
+      right: 70%;
+    }
+  }
+
+  &__arrow:last-child::before {
+    transform: rotate(180deg) translateY(50%);
+  }
+}
+
+.pagination__btn--active {
+  border-radius: 7px;
+  background-color: $color-blue;
+  color: $color-white;
+}
+
+.message {
+  padding: 30px 0;
+  text-align: center;
+  @include font-style('Ubuntu', $color-red, 500, 20px, 25px);
+}
+
+.change-btn {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  right: 7px;
+  top: 15px;
+
+  &::before {
+    @include before-elem(25px, 25px, '../assets/img/circle-arrow.svg');
+    transition: transform .2s ease-in;
+    right: 0px;
+    top: 0;
+  }
+}

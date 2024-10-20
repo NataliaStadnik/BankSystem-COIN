@@ -1,0 +1,18 @@
+.history-section {
+  padding-top: 44px;
+  padding-bottom: 50px;
+}
+.history-section__title {
+  margin-bottom: 30px;
+}
+.history-section .btn--sign {
+  margin-bottom: 33px;
+}
+.history-section__top {
+  margin-bottom: 50px;
+}
+
+.dinamic__upper,
+.dinamic__bottom {
+  min-height: 288px;
+}/*# sourceMappingURL=history.css.map */

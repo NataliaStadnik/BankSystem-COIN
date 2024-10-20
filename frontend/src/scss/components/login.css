@@ -1,0 +1,29 @@
+.login-wrap {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__login {
+  align-items: flex-start;
+  padding: 50px 85px 50px 115px;
+}
+.form__title {
+  margin-bottom: 35px;
+}
+.form__wrap {
+  position: relative;
+  display: flex;
+  margin-bottom: 27px;
+  align-items: center;
+  align-self: flex-end;
+  gap: 18px;
+}
+.form__label {
+  position: absolute;
+  left: -70px;
+}
+.form__wrap:last-child {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=login.css.map */

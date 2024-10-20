@@ -1,0 +1,496 @@
+@media (max-width: 1200px) {
+  .currency .form-wrap {
+    flex-wrap: wrap;
+  }
+  .table .body__cell:first-of-type::before, .table .body__cell:nth-of-type(2)::before {
+    width: 51px;
+    height: 29px;
+    right: -25px;
+  }
+}
+@media (max-width: 1024px) {
+  .cards-list {
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .cards-list__item {
+    flex-shrink: 1;
+  }
+  .cards-list .label {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .order__input {
+    width: 200px;
+  }
+  .order__wrap {
+    gap: 16px;
+  }
+  .order__btn {
+    margin: 0 auto;
+  }
+  .select-list__btn {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .table .body__cell {
+    padding: 19px 18px 20px;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .form__label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .over-wrap {
+    width: initial;
+  }
+  .over-wrap__outer {
+    justify-content: flex-start;
+  }
+  .currency .wrapper {
+    flex-direction: column;
+  }
+  .currency .left-part {
+    max-width: 100%;
+  }
+  .currency .btn {
+    align-self: flex-end;
+    padding: 21px 34px;
+    font-size: 21px;
+  }
+  .currency .dinamic__wrap .input__select {
+    max-width: 200px;
+  }
+  .history {
+    overflow-x: scroll;
+  }
+  .table-wrapper {
+    width: 824px;
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 890px) {
+  .container {
+    padding: 0 20px;
+  }
+  .accounts {
+    padding-top: 35px;
+  }
+  .upper {
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    gap: 20px;
+  }
+  .title {
+    font-size: 31px;
+    line-height: 37.88px;
+  }
+  .title__accounts {
+    margin: 0;
+    width: 100%;
+  }
+  .nav__btn,
+  .card__btn {
+    padding: 11px 18px;
+    font-size: 14px;
+  }
+  .btn--sign {
+    padding: 14px 19px 14px 45px;
+    font-size: 15px;
+  }
+  .btn--sign::before {
+    left: 15px;
+  }
+  .card-number {
+    font-size: 25px;
+    line-height: 38.88px;
+  }
+  .balance {
+    gap: 10px;
+  }
+  .title--midi {
+    font-size: 20px;
+    line-height: 23.46px;
+  }
+  .order {
+    padding: 33px;
+    align-items: center;
+  }
+  .order__title {
+    align-self: flex-start;
+  }
+  .order__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .order__input {
+    width: 250px;
+  }
+  .order .label {
+    font-size: 16px;
+  }
+  .order .select-list__btn {
+    font-size: 15px;
+  }
+  .card-type {
+    top: 15px;
+    right: 20px;
+  }
+  .dinamic__title {
+    margin-bottom: 20px;
+  }
+  .dinamic--big {
+    padding: 25px 50px 20px;
+  }
+  .currency .btn {
+    margin-left: auto;
+  }
+  .table .head__cell {
+    padding: 16px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .table .body__cell {
+    padding: 16px 10px 16px;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .change-btn {
+    top: 10px;
+  }
+}
+@media (max-width: 720px) {
+  .details__top {
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+  .details .right {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    row-gap: 33px;
+  }
+  .left {
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 30px;
+    flex-wrap: wrap;
+  }
+  .balance {
+    width: auto;
+    justify-content: flex-start;
+  }
+  .blocks__upper {
+    flex-direction: column;
+  }
+  .order {
+    padding: 30px;
+    padding-right: 100px;
+    align-items: center;
+  }
+  .order__input {
+    width: 230px;
+  }
+  .order__btn {
+    margin: 0;
+    align-self: flex-end;
+  }
+  .order__wrap {
+    align-items: center;
+    align-self: flex-end;
+    flex-direction: row;
+  }
+  .history-section__top {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .history-section__top .left {
+    row-gap: 20px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  .history-section__top .btn--sign {
+    margin: 0;
+  }
+  .history-section__top .right {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .history-section__title {
+    margin: 0;
+  }
+  .currency .label {
+    font-size: 18px;
+  }
+  .currency .over-wrap {
+    width: 100%;
+  }
+  .left-part .dinamic__form {
+    padding: 30px 40px;
+  }
+  .left-part .dinamic__title {
+    margin: 0;
+  }
+  .card-type {
+    right: 100px;
+  }
+}
+@media (max-width: 610px) {
+  .header {
+    padding: 15px 0;
+  }
+  .header__container {
+    row-gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .header__title {
+    font-size: 42px;
+    line-height: 51.3px;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .details__top {
+    margin-bottom: 30px;
+  }
+  .nav__list {
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .title {
+    font-size: 31px;
+    line-height: 33.88px;
+  }
+  .title--midi {
+    font-size: 20px;
+    line-height: 23.46px;
+  }
+  .order {
+    padding-right: 30px;
+  }
+  .order__wrap {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .order__btn {
+    align-self: center;
+  }
+  .order .btn-wrap {
+    margin: 0;
+  }
+  .order .label {
+    text-align: left;
+  }
+  .graphic {
+    position: relative;
+    left: 10px;
+  }
+  .dinamic {
+    border-radius: 25px;
+    row-gap: 10px;
+  }
+  .dinamic__title {
+    margin: 0;
+  }
+  .dinamic .form-wrap {
+    gap: 10px;
+  }
+  .blocks {
+    gap: 30px;
+  }
+  .blocks__upper {
+    gap: 30px;
+  }
+  .login-wrap {
+    height: 100%;
+    padding-top: 30px;
+  }
+  .login-wrap .form__login {
+    padding: 50px 85px 50px 100px;
+  }
+  .login-wrap .input {
+    width: 250px;
+  }
+  .currency .form-wrap {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .currency .form-wrap .btn {
+    margin: 0;
+    margin-left: auto;
+    padding: 18px 30px;
+    font-size: 17px;
+  }
+  .currency .dinamic__form {
+    align-items: flex-start;
+  }
+  .currency .dinamic__wrap {
+    max-width: 260px;
+  }
+  .currency .dinamic__wrap .input__select {
+    max-width: 140px;
+  }
+  .currency .over-wrap {
+    align-items: flex-start;
+  }
+  .left-part .dinamic__title {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+  .dinamic-block__title {
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .container {
+    padding: 0px 15px;
+  }
+  .nav__list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .nav__item {
+    width: 135px;
+  }
+  .nav__btn {
+    width: 100%;
+  }
+  .card {
+    padding: 17px;
+  }
+  .card__info {
+    width: 100%;
+  }
+  .card__bottom {
+    gap: 20px;
+  }
+  .card__title {
+    font-size: 11px;
+    line-height: 15.25px;
+  }
+  .cards-list__item {
+    width: 100%;
+  }
+  .number {
+    font-size: 16px;
+  }
+  .sum {
+    font-size: 13px;
+  }
+  .input__select {
+    width: 250px;
+  }
+  .left {
+    row-gap: 15px;
+  }
+  .card-number {
+    font-size: 18px;
+  }
+  .right {
+    justify-content: flex-end;
+  }
+  .right .btn--sign {
+    display: none;
+  }
+  .order__input {
+    width: 250px;
+  }
+  .order__wrap {
+    flex-direction: column;
+  }
+  .dinamic-block {
+    padding: 30px 45px 30px 25px;
+    border-radius: 25px;
+  }
+  .dinamic--big {
+    padding: 20px;
+  }
+  .blocks .dinamic {
+    border-radius: 25px;
+    padding: 20px;
+  }
+  .graphic {
+    left: 17px;
+  }
+  .currency__title {
+    margin-bottom: 30px;
+  }
+  .currency .row__title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .currency .form-wrap {
+    gap: 20px;
+  }
+  .currency .form-wrap .btn {
+    margin: 0;
+  }
+  .currency .btn-wrap {
+    width: 100%;
+    margin: 0;
+  }
+  .currency .dinamic__wrap {
+    justify-content: space-between;
+  }
+  .currency .dinamic__wrap .input__select {
+    max-width: initial;
+    width: 100%;
+  }
+  .currency .input {
+    width: 100%;
+  }
+  .over-wrap__outer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .row__sign::after {
+    right: -30px;
+  }
+  .left-part .dinamic {
+    padding: 30px 25px;
+  }
+  .login-wrap .form__wrap {
+    width: 100%;
+    align-self: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .login-wrap .form__wrap .input {
+    width: 100%;
+  }
+  .login-wrap .form__title {
+    font-size: 27px;
+  }
+  .login-wrap .form__login {
+    align-items: center;
+    padding: 50px 40px;
+  }
+  .login-wrap .form__label {
+    position: static;
+    font-size: 19px;
+    align-self: flex-start;
+  }
+  .login-wrap .form .btn {
+    width: 100%;
+  }
+  .card-type {
+    right: 5px;
+    background-size: 80px 40px;
+  }
+  .title--midi,
+  .dinamic__title {
+    text-align: center;
+    font-size: 18px;
+  }
+  .order__title {
+    align-self: center;
+  }
+}/*# sourceMappingURL=breakpoints.css.map */

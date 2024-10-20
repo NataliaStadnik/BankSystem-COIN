@@ -1,0 +1,122 @@
+.accounts {
+  padding-top: 44px;
+  padding-bottom: 50px;
+}
+
+.upper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.btn-wrap {
+  position: relative;
+  margin-right: auto;
+}
+
+.frame {
+  position: absolute;
+  overflow: scroll;
+  max-height: 180px;
+  padding: 10px 0;
+  border-radius: 9px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  top: calc(100% + 2px);
+  background-color: $color-white;
+  z-index: 100;
+}
+
+.select-list {
+  &__item:hover {
+    background-color: $color-light-blue;
+  }
+
+  &__btn {
+    position: relative;
+    padding: 10px 16px 10px 16px;
+    text-align: left;
+    width: 100%;
+    @include font-style('Ubuntu', $color-grey-37, 400, 16px, 24px);
+  }
+
+  &__btn--click::before {
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    @include before-elem(24px, 24px, '../assets/img/check.svg');
+  }
+}
+
+.input__select {
+  position: relative;
+  padding: 10px 50px 10px 16px;
+  border: 1px solid #9CA3AF;
+  text-align: start;
+  @include font-style('Ubuntu', $color-grey-37, 400, 16px, 24px);
+
+  &:focus {
+    border-color: $color-blue;
+  }
+
+  &::before {
+    right: 11px;
+  }
+}
+
+.title__accounts {
+  margin-right: 35px;
+  letter-spacing: 1.1px;
+}
+
+.cards-list {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 50px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  padding: 22px;
+  border-radius: 9px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bottom {
+    column-gap: 91px;
+    align-items: flex-end;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__btn {
+    padding: 16px 21px;
+    font-size: 16px;
+  }
+
+  &__title,
+  &__date {
+    @include font-style('WorkSans', $color-black, 700, 13px, 11.25px);
+  }
+
+  &__date {
+    font-weight: 400;
+  }
+}
+
+.number {
+  margin-bottom: 9px;
+  @include font-style('Roboto', $color-light-black, 500, 18px, 22px);
+}
+
+.sum {
+  margin-bottom: 10px;
+  @include font-style('Ubuntu', $color-light-black, 400, 14px, 20px);
+}

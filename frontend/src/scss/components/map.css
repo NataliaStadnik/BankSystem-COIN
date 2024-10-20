@@ -1,0 +1,11 @@
+.map {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.map__title {
+  margin-bottom: 56px;
+}
+.map__container {
+  width: 100%;
+  height: 728px;
+}/*# sourceMappingURL=map.css.map */

@@ -1,0 +1,258 @@
+.details {
+  padding-top: 44px;
+  padding-bottom: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    margin-bottom: 54px;
+  }
+
+  .dinamic,
+  .history {
+    cursor: pointer;
+  }
+}
+
+.btn--sign:not(:last-child) {
+  &::before {
+    @include before-elem(24px, 24px, '../assets/img/arrow-link.svg');
+  }
+}
+
+.card-number {
+  @include font-style('WorkSans', $color-black, 400, 34px, 39.88px);
+}
+
+.balance {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  &__sum {
+    @include font-style('WorkSans', $color-black, 400, 20px, 23.46px);
+  }
+}
+
+.left {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.right {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  row-gap: 33px;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  &__upper {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.form--set {
+  position: relative;
+  flex-basis: 46%;
+  align-items: flex-end;
+  gap: 25px;
+  padding: 25px 50px;
+}
+
+.order {
+  &__wrap {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__title {
+    align-self: flex-start;
+  }
+
+  &__btn {
+    margin-right: 136px;
+  }
+
+  &__label {
+    text-align: right;
+  }
+
+  .choose-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .btn--sign::before {
+    @include before-elem(24px, 24px, '../assets/img/mail.svg');
+  }
+
+  &__input {
+    padding-right: 40px;
+  }
+}
+
+.dinamic {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  flex-basis: 50%;
+  padding: 25px 50px 20px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+
+  &--big {
+    padding-left: 98px;
+    padding-right: 98px;
+  }
+}
+
+.history {
+  padding: 25px 50px;
+
+  &__title {
+    margin-bottom: 25px;
+  }
+}
+
+.table {
+  &__head {
+    background-color: $color-blue;
+  }
+
+  .head {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    &__cell {
+      padding: 20px;
+      text-align: center;
+      @include font-style('Ubuntu', $color-white, 500, 20px, 24px);
+    }
+
+    &__cell:first-child {
+      width: 35%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    &__cell:nth-child(2) {
+      width: 35%;
+    }
+
+    &__cell:last-child {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+
+  .body {
+    &__cell {
+      position: relative;
+      padding: 21px 20px 26px;
+      text-align: center;
+      @include font-style('Ubuntu', $color-white, 400, 16px, 24px);
+      color: $color-grey-37;
+
+      &:first-of-type::before,
+      &:nth-of-type(2)::before {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 35px;
+        background-repeat: no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -5px;
+        background-size: contain;
+      }
+    }
+
+    &__img--visa::before {
+      background-image: url('../assets/img/visa.svg');
+    }
+
+    &__img--mastercard::before {
+      background-image: url('../assets/img/mastercard.svg');
+    }
+
+    &__img--american-express::before {
+      background-image: url('../assets/img/american-express.svg');
+    }
+
+    &__img--jcb::before {
+      background-image: url('../assets/img/jcb.svg');
+    }
+
+    &__img--unionpay::before {
+      background-image: url('../assets/img/unionpay.svg');
+    }
+
+    &__img--maestro::before {
+      background-image: url('../assets/img/maestro.svg');
+    }
+
+    &__img--mir::before {
+      background-image: url('../assets/img/mir.svg');
+    }
+
+    &__img--hiper::before {
+      background-image: url('../assets/img/hiper.svg');
+    }
+
+    &__img--hipercard::before {
+      background-image: url('../assets/img/hipercard.svg');
+    }
+
+    &__img--elo::before {
+      background-image: url('../assets/img/elo.svg');
+    }
+
+    &__row {
+      border-bottom: 2px solid #0052FF1A;
+    }
+
+    .amount {
+      &--green {
+        color: $color-green;
+      }
+
+      &--red {
+        color: $color-red;
+      }
+    }
+  }
+}
+
+.card-type {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  width: 90px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 90px 50px;
+}

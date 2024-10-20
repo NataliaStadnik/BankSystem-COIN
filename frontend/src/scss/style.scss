@@ -1,0 +1,18 @@
+@import './vendor/vars';
+@import './vendor/fonts';
+@import './vendor/settings';
+@import './vendor/mixin';
+
+@import './utilits/common.scss';
+
+@import './components/loader.scss';
+@import './components/header.scss';
+@import './components/login.scss';
+@import './components/accounts.scss';
+@import './components/map.scss';
+@import './components/card.scss';
+@import './components/history.scss';
+@import './components/currency.scss';
+
+@import './vendor/effects';
+@import './components/breakpoints.scss';

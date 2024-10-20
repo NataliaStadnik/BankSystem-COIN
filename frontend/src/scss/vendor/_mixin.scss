@@ -1,0 +1,16 @@
+@mixin font-style($a, $b, $c, $d, $e) {
+  font-family: $a, sans-serif;
+  color: $b;
+  font-weight: $c;
+  font-size: $d;
+  line-height: $e;
+}
+
+@mixin before-elem($a, $b, $c) {
+  position: absolute;
+  content: '';
+  width: $a;
+  height: $b;
+  background-image: url($c);
+  background-repeat: no-repeat;
+}

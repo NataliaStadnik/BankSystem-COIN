@@ -1,0 +1,131 @@
+  .btn,
+  .card__btn,
+  .btn--sign {
+    transition: background-color .2s ease-in, outline .2s ease-in;
+
+    &:hover:not(:focus-visible) {
+      background-color: $hover-blue-light;
+    }
+
+    &:active:not(:focus-visible) {
+      background-color: $active-blue-dark;
+    }
+
+    &:focus-visible {
+      background-color: $hover-blue-light;
+      outline: 1px solid $active-blue-dark;
+    }
+
+    &:disabled {
+      background-color: $disabled-grey;
+      cursor: auto;
+    }
+  }
+
+  .nav__btn {
+    transition: background-color .2s ease-in, border .2s ease-in, color .3s ease-in;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $hover-blue-darker;
+      border: 2px solid $hover-blue-darker;
+    }
+
+    &:active:not(:focus-visible) {
+      background-color: $active-blue-lighter;
+      border: 2px solid $color-blue;
+    }
+
+    &:disabled {
+      background-color: $disabled-grey-lighter;
+      border: 2px solid $border-grey;
+      color: $border-grey;
+      cursor: auto;
+    }
+  }
+
+  .input {
+    transition: background-color .2s ease-in, border-color .2s ease-in;
+
+    &:hover:not(:focus-visible):not(:disabled) {
+      background-color: $input-hover;
+      border-color: $color-blue;
+    }
+
+    &:focus-visible {
+      background-color: $input-focus;
+      border-color: $color-blue;
+    }
+
+    &:disabled {
+      border: 1px solid $border-grey;
+      color: $color-grey-37;
+      cursor: auto;
+    }
+  }
+
+  .change-btn:hover {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  .change-btn:focus {
+    background-color: $hover-blue-light;
+  }
+
+  .pagination__btn,
+  .pagination__dots {
+    transition: background-color .2s ease-in, color .2s ease-in, border-radius .2s ease-in;
+
+    &:hover:not(:focus-visible) {
+      background-color: $hover-blue-light;
+      color: $color-white;
+      border-radius: 7px;
+    }
+
+    &:active:not(:focus-visible) {
+      background-color: $active-blue-dark;
+      color: $color-white;
+      border-radius: 7px;
+    }
+
+    &:focus-visible {
+      background-color: $hover-blue-light;
+      outline: 1px solid $active-blue-dark;
+      color: $color-white;
+      border-radius: 7px;
+    }
+
+    &:disabled {
+      background-color: $disabled-grey;
+      cursor: auto;
+      border-radius: 7px;
+    }
+  }
+
+  .pagination__arrow {
+    transition: transform .2s ease-in;
+
+    &:first-of-type:hover,
+    &:first-of-type:focus-visible {
+      transform: scale(130%) translateX(-5px);
+    }
+
+    &:last-of-type:hover,
+    &:last-of-type:focus-visible {
+      transform: scale(130%) translateX(5px);
+    }
+  }
+
+  .details {
+    .dinamic,
+    .history {
+      transition: transform .2s ease-in, outline .2s ease-in;
+
+      &:focus {
+        outline: 1px solid $color-blue;
+        transform: scale(102%);
+      }
+    }
+  }
